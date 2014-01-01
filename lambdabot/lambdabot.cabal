@@ -57,3 +57,4 @@ executable lambdabot
                         lambdabot-novelty-plugins    >= 5.0.1 && < 5.1,
                         lambdabot-reference-plugins  >= 5.0.1 && < 5.1,
                         lambdabot-social-plugins     >= 5.0.1 && < 5.1
+                      , lambdabot-hipchat-plugins

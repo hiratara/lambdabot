@@ -12,6 +12,7 @@ import Lambdabot.Plugin.Misc
 import Lambdabot.Plugin.Novelty
 import Lambdabot.Plugin.Reference
 import Lambdabot.Plugin.Social
+import Lambdabot.Plugin.HipChat (hipChatPlugins, hipChatPlugin)
 
 modulesInfo :: Modules
 modulesInfo = $(modules $ corePlugins
@@ -20,4 +21,5 @@ modulesInfo = $(modules $ corePlugins
     ++ ["dummy", "fresh", "todo"] -- miscPlugins
     ++ ["bf", "dice", "elite", "filter", "quote", "slap", "unlambda", "vixen"] -- noveltyPlugins
     ++ referencePlugins
-    ++ socialPlugins)
+    ++ socialPlugins
+    ++ hipChatPlugins)
