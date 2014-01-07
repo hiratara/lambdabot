@@ -28,7 +28,7 @@ import System.IO
 -------------------------------------
 -- Core configuration variables
 
-config "commandPrefixes"    [t| [String]                |] [| ["@", "?"]    |]
+config "commandPrefixes"    [t| [String]                |] [| ["!", "?"]    |]
 config "disabledCommands"   [t| [String]                |] [| []            |]
 config "editDistanceLimit"  [t| Int                     |] [| 3 :: Int      |]
 config "enableInsults"      [t| Bool                    |] [| True          |]
@@ -42,7 +42,7 @@ config "replaceRootLogger"  [t| Bool                    |] [| True              
 config "lbRootLoggerPath"   [t| [String]                |] [| []                          |]
 config "consoleLogHandle"   [t| Handle                  |] [| stderr                      |]
 config "consoleLogLevel"    [t| Priority                |] [| NOTICE                      |]
-config "consoleLogFormat"   [t| String                  |] [| "[$prio] $loggername: $msg" |]
+config "consoleLogFormat"   [t| String                  |] [| "[$time]$loggername-$prio: $msg" |]
 
 --------------------------------------------
 -- Default values with longer definitions
