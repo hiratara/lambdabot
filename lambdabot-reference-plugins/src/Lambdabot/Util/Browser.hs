@@ -79,4 +79,4 @@ extractTitle = content . tags . decodeString where
     content = maybeText . format . innerText
     format = unwords . words
     maybeText [] = Nothing
-    maybeText t  = Just (encodeString t)
+    maybeText t  = Just t
